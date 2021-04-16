@@ -32,12 +32,15 @@ public class hello {
     }
 
     @Test
-    public void inactiveUsser() {
-        log.info("inactive");
+    public void inactiveUser() {
+        log.info("Click on icon account");
+        log.info("Click on ESPN Profile");
+        log.info("Switch to Iframe");
+        log.info("Click on delete account");
     }
 
     @AfterTest
     public void closeDriver(){
-        log.info("close");
+        log.info("close driver");
     }
 }
