@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 
 import java.util.logging.Logger;
 
-public class hello {
+public class Test {
     Logger log =  Logger.getLogger("");;
 
     @BeforeTest
@@ -13,7 +13,7 @@ public class hello {
         log.info("Navigate to the ESPN page");
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void logIn() {
         log.info("Wait that the page loads completely");
         log.info("Click on icon account");
@@ -25,13 +25,13 @@ public class hello {
         log.info("Switch to default content");
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void logOut() {
         log.info("Click on icon account");
         log.info("Click on log out");
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void inactiveUser() {
         log.info("Click on icon account");
         log.info("Click on ESPN Profile");
